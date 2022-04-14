@@ -3,11 +3,12 @@
     "esModuleInterop": true,
     "lib": ["es6", "dom"],
     "target": "es6",
-    "module": "commonjs",
+    "module": "ES2015",
     "noImplicitAny": true,
     "removeComments": true,
     "preserveConstEnums": true,
-    "sourceMap": true
+    "sourceMap": true,
+    "baseUrl": "./"
   },
   "ts-node": {
     "esm": true
