@@ -1,12 +1,16 @@
 // TODO: https://leetcode.com/problems/valid-palindrome-ii/
 
-type TCheckPalindrome = (
+type TIsPalindrome = (
   string: string,
-  startIndex: number,
-  endIndex: number
+  startIndex?: number,
+  endIndex?: number
 ) => boolean;
 
-const checkPalindrome: TCheckPalindrome = (string, startIndex, endIndex) => {
+const isPalindrome: TIsPalindrome = (
+  string,
+  startIndex = 0,
+  endIndex = string.length - 1
+) => {
   while (startIndex < endIndex) {
     if (string[startIndex] !== string[endIndex]) {
       return false;
@@ -23,8 +27,8 @@ function validPalindrome(string: string): boolean {
   while (startIndex < endIndex) {
     if (string[startIndex] !== string[endIndex]) {
       return (
-        checkPalindrome(string, startIndex, endIndex - 1) ||
-        checkPalindrome(string, startIndex + 1, endIndex)
+        isPalindrome(string, startIndex, endIndex - 1) ||
+        isPalindrome(string, startIndex + 1, endIndex)
       );
     }
 

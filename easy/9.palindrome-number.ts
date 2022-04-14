@@ -1,6 +1,6 @@
 // TODO: https://leetcode.com/problems/palindrome-number/
 
-function isPalindrome(value: number): boolean {
+const isPalindrome0 = (value: number): boolean => {
   if (value < 0 || (value > 0 && value % 10 === 0)) {
     return false;
   }
@@ -12,7 +12,7 @@ function isPalindrome(value: number): boolean {
   }
 
   return value === reversedNumber || value === Math.floor(reversedNumber / 10);
-}
+};
 
 function isPalindromeAlternative1(value: number): boolean {
   const string: string = value.toString();
@@ -24,6 +24,6 @@ function isPalindromeAlternative1(value: number): boolean {
   return true;
 }
 
-console.log(isPalindrome(121));
-console.log(isPalindrome(-121));
-console.log(isPalindrome(10));
+console.log(isPalindrome0(121));
+console.log(isPalindrome0(-121));
+console.log(isPalindrome0(10));
