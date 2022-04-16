@@ -1,6 +1,6 @@
 // TODO: https://leetcode.com/problems/3sum-with-multiplicity/
 
-function threeSumMulti(array: number[], target: number): number {
+const threeSumMulti = (array: number[], target: number): number => {
   const map = new Map<number, number>();
   const modification = 1000000007;
   let sum = 0;
@@ -15,7 +15,7 @@ function threeSumMulti(array: number[], target: number): number {
   }
 
   return sum;
-}
+};
 
 threeSumMulti([1, 1, 2, 2, 3, 3, 4, 4, 5, 5], 8);
 threeSumMulti([1, 1, 2, 2, 2, 2], 5);

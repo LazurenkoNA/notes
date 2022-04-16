@@ -1,6 +1,6 @@
 // TODO: https://leetcode.com/problems/valid-parentheses/
 
-function isValid(string: string): boolean {
+const isValid = (string: string): boolean => {
   const object: { [key: string]: string } = {
     "(": ")",
     "[": "]",
@@ -16,7 +16,7 @@ function isValid(string: string): boolean {
     }
   }
   return stack.length === 0;
-}
+};
 
 console.log("result", isValid("()"));
 console.log("result", isValid("()[]{}"));

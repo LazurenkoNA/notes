@@ -1,6 +1,6 @@
 // TODO: https://leetcode.com/problems/shift-2d-grid/
 
-function shiftGrid(grid: number[][], k: number): number[][] {
+const shiftGrid = (grid: number[][], k: number): number[][] => {
   const rows = grid.length;
   const columns = grid[0].length;
 
@@ -27,7 +27,7 @@ function shiftGrid(grid: number[][], k: number): number[][] {
   }
 
   return answer;
-}
+};
 
 shiftGrid(
   [

@@ -1,6 +1,6 @@
 // TODO:  https://leetcode.com/problems/next-permutation/
 
-function nextPermutation(numbers: number[]): number[] {
+const nextPermutation = (numbers: number[]): number[] => {
   let i = numbers.length - 2;
   while (i >= 0 && numbers[i + 1] <= numbers[i]) {
     i -= 1;
@@ -17,7 +17,7 @@ function nextPermutation(numbers: number[]): number[] {
   reverse(numbers, i + 1, numbers.length - 1);
 
   return numbers;
-}
+};
 
 const swap = (numbers: number[], first: number, second: number) => {
   [numbers[first], numbers[second]] = [numbers[second], numbers[first]];
@@ -37,8 +37,9 @@ const reverse = (numbers: number[], start: number, end: number): void => {
   reverse(numbers, start + 1, end - 1);
 };
 
-console.log(
-  nextPermutation([1, 2, 3]),
-  nextPermutation([3, 2, 1]),
-  nextPermutation([1, 1, 5])
-);
+const result = {
+  1: nextPermutation([1, 2, 3]),
+  2: nextPermutation([3, 2, 1]),
+  3: nextPermutation([1, 1, 5]),
+};
+console.log(result);

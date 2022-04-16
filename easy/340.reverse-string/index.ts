@@ -1,10 +1,10 @@
 // TODO: https://leetcode.com/problems/reverse-string/
 
-function reverseStringLower(s: string[]): string[] {
+const reverseStringLower = (s: string[]): string[] => {
   return s.reverse();
-}
+};
 
-function reverseString(strings: string[]): string[] {
+const reverseString = (strings: string[]): string[] => {
   let left = 0;
   let right = strings.length - 1;
 
@@ -15,7 +15,7 @@ function reverseString(strings: string[]): string[] {
   }
 
   return strings;
-}
+};
 
 reverseString(["h", "e", "l", "l", "o"]);
 reverseString(["H", "a", "n", "n", "a", "h"]);

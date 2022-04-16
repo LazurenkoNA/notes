@@ -1,4 +1,4 @@
-function generateMatrix(n: number): number[][] {
+const generateMatrix = (n: number): number[][] => {
   let row1 = 0;
   let row2 = n - 1;
   let column1 = 0;
@@ -33,7 +33,7 @@ function generateMatrix(n: number): number[][] {
   }
 
   return answer;
-}
+};
 
 // 100
 generateMatrix(3);

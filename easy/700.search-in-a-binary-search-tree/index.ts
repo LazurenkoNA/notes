@@ -1,11 +1,13 @@
 import { arg1, TreeNode } from "./data.js";
 
-function searchBST(root: TreeNode | null, val: number): TreeNode | null {
+// TODO: https://leetcode.com/problems/search-in-a-binary-search-tree/
+
+const searchBST = (root: TreeNode | null, val: number): TreeNode | null => {
   if (!root) return null;
   if (root.val === val) return root;
   if (val > root.val) return searchBST(root.right, val);
   if (val < root.val) return searchBST(root.left, val);
-}
+};
 
 const result = {
   1: searchBST(arg1, 2),
