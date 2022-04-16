@@ -14,7 +14,7 @@ const isPalindrome0 = (value: number): boolean => {
   return value === reversedNumber || value === Math.floor(reversedNumber / 10);
 };
 
-function isPalindromeAlternative1(value: number): boolean {
+const isPalindromeAlternative1 = (value: number): boolean => {
   const string: string = value.toString();
   for (let i = 0; i < string.length; ++i) {
     if (string[i] !== string[string.length - i - 1]) {
@@ -22,7 +22,7 @@ function isPalindromeAlternative1(value: number): boolean {
     }
   }
   return true;
-}
+};
 
 console.log(isPalindrome0(121));
 console.log(isPalindrome0(-121));

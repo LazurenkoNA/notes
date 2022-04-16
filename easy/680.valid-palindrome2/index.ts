@@ -21,7 +21,7 @@ const isPalindrome: TIsPalindrome = (
   return true;
 };
 
-function validPalindrome(string: string): boolean {
+const validPalindrome = (string: string): boolean => {
   let startIndex: number = 0;
   let endIndex: number = string.length - 1;
   while (startIndex < endIndex) {
@@ -36,7 +36,7 @@ function validPalindrome(string: string): boolean {
     endIndex -= 1;
   }
   return true;
-}
+};
 
 console.log(validPalindrome("aba"));
 console.log(validPalindrome("abca"));

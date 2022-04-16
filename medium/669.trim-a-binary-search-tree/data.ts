@@ -8,10 +8,10 @@ export class TreeNode {
     this.right = right === undefined ? null : right;
   }
 }
-[4, 2, 7, 1, 3];
 
-export const arg1 = new TreeNode(
-  4,
-  new TreeNode(2, new TreeNode(1), new TreeNode(3)),
-  new TreeNode(7)
+export const graph1 = new TreeNode(1, new TreeNode(0), new TreeNode(2));
+export const graph2 = new TreeNode(
+  3,
+  new TreeNode(0, null, new TreeNode(2, new TreeNode(1))),
+  new TreeNode(4)
 );

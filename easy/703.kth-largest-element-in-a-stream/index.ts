@@ -1,10 +1,10 @@
 // TODO: https://leetcode.com/problems/kth-largest-element-in-a-stream/
 
-function binSearch(
+const binSearch = (
   array: number[],
   term: number,
   compareFunction = (a: number, b: number) => a - b
-) {
+) => {
   let start: number = 0;
   let end: number = array.length - 1;
   while (start <= end) {
@@ -19,7 +19,7 @@ function binSearch(
     }
   }
   return start;
-}
+};
 
 class KthLargest {
   k: number;

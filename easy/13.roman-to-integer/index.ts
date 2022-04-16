@@ -12,7 +12,7 @@ enum Roman {
 
 type RomanLiterals = keyof typeof Roman;
 
-function romanToInt(value: string): number {
+const romanToInt = (value: string): number => {
   let counter = 0;
   for (let i = 0; i < value.length; ++i) {
     const isLessNumber =
@@ -26,4 +26,4 @@ function romanToInt(value: string): number {
     }
   }
   return counter;
-}
+};

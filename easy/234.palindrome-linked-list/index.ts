@@ -1,4 +1,5 @@
 // TODO: https://leetcode.com/problems/palindrome-linked-list/
+
 type TIsPalindrome = (
   string: string,
   startIndex?: number,
@@ -25,7 +26,7 @@ type ListNode = {
   next: null | ListNode;
 };
 
-export function isPalindromeLinkedList(head: ListNode) {
+const isPalindromeLinkedList = (head: ListNode) => {
   let string = "";
   while (head?.next !== null) {
     string += head.value;
@@ -36,7 +37,7 @@ export function isPalindromeLinkedList(head: ListNode) {
   console.log(isPalindrome(string));
 
   return isPalindrome(string);
-}
+};
 
 // RUN
 const ln4 = <ListNode>{
@@ -55,7 +56,6 @@ export const ln1 = {
   value: 1,
   next: ln2,
 };
-
 isPalindromeLinkedList(ln1);
 
 const ln02 = <ListNode>{

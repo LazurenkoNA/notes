@@ -1,6 +1,6 @@
 // TODO: https://leetcode.com/problems/container-with-most-water/
 
-function maxAreaFirst(height: number[]): number {
+const maxArea0 = (height: number[]): number => {
   let left: number = 0;
   let right: number = height.length - 1;
   let maxArea: number = 0;
@@ -16,9 +16,9 @@ function maxAreaFirst(height: number[]): number {
     }
   }
   return maxArea;
-}
+};
 
-function maxAreaSecond(height: number[]): number {
+const maxArea1 = (height: number[]): number => {
   let left: number = 0;
   let right: number = height.length - 1;
   let maxArea: number = 0;
@@ -40,7 +40,7 @@ function maxAreaSecond(height: number[]): number {
     }
   }
   return maxArea;
-}
+};
 
 // maxArea([1, 8, 6, 2, 5, 4, 8, 3, 7]);
 // maxArea([1, 1]);

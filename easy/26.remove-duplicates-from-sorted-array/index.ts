@@ -1,6 +1,6 @@
 // TODO: https://leetcode.com/problems/remove-duplicates-from-sorted-array/
 
-function removeDuplicatesLower(nums: number[]): number {
+const removeDuplicatesLower = (nums: number[]): number => {
   let length = 0;
   for (let i = 0; i < nums.length; i++) {
     console.log("index", i);
@@ -10,9 +10,9 @@ function removeDuplicatesLower(nums: number[]): number {
     length += 1;
   }
   return nums.length;
-}
+};
 
-function removeDuplicates(nums: number[]): number {
+const removeDuplicates = (nums: number[]): number => {
   let left = 1;
   let right = 1;
   const length = nums.length;
@@ -27,6 +27,7 @@ function removeDuplicates(nums: number[]): number {
   }
 
   return left;
-}
+};
+
 console.log(removeDuplicates([1, 1, 2]));
 console.log(removeDuplicates([0, 0, 1, 1, 1, 2, 2, 3, 3, 4]));
