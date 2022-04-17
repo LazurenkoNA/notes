@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "esModuleInterop": true,
-    "lib": ["es6", "dom"],
+    "lib": ["es2016", "dom"],
     "target": "es6",
     "module": "ES2015",
     "noImplicitAny": true,
