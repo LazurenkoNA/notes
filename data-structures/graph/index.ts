@@ -1,6 +1,4 @@
 import { Graph } from "./graph.js";
-import { GraphNode } from "./node.js";
-import { TEdges, TNodes } from "./types.js";
 
 const graph = new Graph();
 graph.addNode("A", 1, ["B", "C"]);
