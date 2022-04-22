@@ -3,7 +3,6 @@
 const removeDuplicatesLower = (nums: number[]): number => {
   let length = 0;
   for (let i = 0; i < nums.length; i++) {
-    console.log("index", i);
     if (nums[i + 1] === nums[i]) {
       [nums[i]] = [nums[length - i - 1]];
     }
