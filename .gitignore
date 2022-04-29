@@ -1,10 +1,10 @@
-// macOS files
+# macOS files
 .DS_Store
 
-// package management
+# package management
 node_modules
 yarn-error.log
 
-// IDE
+# IDE
 .idea
 .vscode
