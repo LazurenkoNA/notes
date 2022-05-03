@@ -3,7 +3,7 @@ from pip import List
 
 class Solution:
     def findUnsortedSubarray(self, numbs: List[int]) -> int:
-        print("----")
+
         if len(numbs) == 1:
             return 0
 
@@ -21,5 +21,5 @@ class Solution:
                 small_value = numbs[i]
             else:
                 left_index = i
-        print(right_index, left_index)
+
         return 0 if left_index == right_index else right_index - left_index + 1
