@@ -4,5 +4,8 @@
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "files.autoSave": "onFocusChange"
+  "files.autoSave": "onFocusChange",
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.python"
+  }
 }
