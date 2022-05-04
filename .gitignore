@@ -8,3 +8,5 @@ yarn-error.log
 # IDE
 .idea
 .vscode
+
+__pycache__
