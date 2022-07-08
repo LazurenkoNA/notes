@@ -61,6 +61,7 @@ class Solution:
         m, n = len(s1), len(s2)
         if m + n != len(s3):
             return False
+
         dp = [[False] * (n + 1) for _ in range(m + 1)]
         dp[0][0] = True
 
