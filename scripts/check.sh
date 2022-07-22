@@ -30,7 +30,8 @@ echo "replaced_message: $replaced_message"
 echo "branch_name: $branch_name"
 echo "commit_message: $commit_message"
 
-git checkout -b $branch_name &&
+git pull &&
+  git checkout -b $branch_name &&
   git add . &&
   git commit -m "$commit_message" &&
   git push origin $branch_name &&
